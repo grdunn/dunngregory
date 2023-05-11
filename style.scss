@@ -1,0 +1,42 @@
+$mobile-bp: 650px;
+
+body {
+  font-family: 'Instrument Sans', sans-serif;
+  margin: 0;
+  h4 {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    margin: 0;
+  }
+  p {
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    margin: 20px 0;
+  }
+}
+
+.u-grid {
+  display: flex;
+  justify-content: center;
+}
+
+.u-grid__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  justify-content: center;
+  width: 100%;
+  @media (min-width: $mobile-bp) {
+    flex-direction: row;;
+  }
+}
+
+.u-grid__column {
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  @media (min-width: $mobile-bp) {
+    width: 25%;
+  }
+}
