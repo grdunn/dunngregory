@@ -3,6 +3,7 @@ $mobile-bp: 650px;
 body {
   font-family: 'Instrument Sans', sans-serif;
   margin: 0;
+  height: 100vh;
   h4 {
     font-size: 12px;
     letter-spacing: 1.5px;
@@ -20,6 +21,7 @@ body {
 .u-grid {
   display: flex;
   justify-content: center;
+  height: 100%;
 }
 
 .u-grid__container {
@@ -27,6 +29,7 @@ body {
   flex-direction: column;
   max-width: 1000px;
   justify-content: center;
+  align-items: center;;
   width: 100%;
   @media (min-width: $mobile-bp) {
     flex-direction: row;;
